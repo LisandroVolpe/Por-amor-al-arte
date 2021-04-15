@@ -1,0 +1,192 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/*HEADER*/
+#logo {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+ul {
+  list-style: none;
+  font-size: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 5%;
+  position: relative;
+  font-size: 25px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Amatic SC", cursive;
+}
+
+li:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+/*INDEX*/
+/*Logo redes*/
+.LogoRedes {
+  width: 25px;
+  height: 25px;
+}
+
+/*cuadro*/
+.cuadro, .cuadro--nuevo {
+  display: block;
+  border-style: solid;
+  width: 50vh;
+  border-radius: 15px;
+  border-color: black;
+  background-color: #ffd7ba;
+}
+
+#cuadro1 {
+  margin: auto;
+}
+
+/*Titulo*/
+.titulo {
+  color: black;
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+
+/*texto*/
+.texto {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-size: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+/*NUEVO*/
+.carrusel {
+  margin-right: auto;
+  margin-left: 15%;
+}
+
+/*PRODUCTOS*/
+/*fotos*/
+img {
+  max-width: 100%;
+}
+
+.gallery {
+  background-color: #dbddf1;
+  padding: 80px 0;
+}
+
+.gallery img {
+  background-color: #ffffff;
+  padding: 15px;
+  width: 100%;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+/*SOBRE MI*/
+/*titulo*/
+section h2 {
+  color: #805020;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+
+/*fotos*/
+.FotoChica {
+  width: 20%;
+  height: 20%;
+  border-style: none;
+  border-radius: 15px;
+  margin: 2px;
+}
+
+#imagen {
+  width: 63%;
+  height: 63%;
+  margin-top: 20%;
+  border-style: none;
+  border-radius: 15px;
+}
+
+.cuadro--nuevo {
+  border-width: 3px;
+  margin-top: 10%;
+}
+
+/*Grid*/
+.Grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .Grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "top" "bot";
+  }
+  .cuadro, .cuadro--nuevo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: top;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  article {
+    visibility: hidden;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: bot;
+  }
+}
+
+/*CONTACTO*/
+#contacto {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+/*FOOTER*/
+footer {
+  text-align: right;
+  margin-top: 5%;
+}
+
+body {
+  background-color: #ffd7ba;
+}
+
+.fondo {
+  background-color: #dbddf1;
+  padding: 80px;
+}
+/*# sourceMappingURL=estilo.css.map */

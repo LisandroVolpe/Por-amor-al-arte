@@ -1,0 +1,209 @@
+*{
+	margin: 0%;
+	padding: 0%
+}
+$color1:rgb(255, 215, 186);
+$color2: rgb(219, 221, 241);
+$fuente1:'Amatic SC', cursive;
+$fuente2:'Dancing Script', cursive;
+
+/*HEADER*/
+
+#logo{
+	width:200px; height:200px;
+	float: left;
+}
+
+
+ul{
+	list-style: none;
+	font-size: 0
+}
+
+
+    li { 
+	display: inline-block;
+	margin: 5%;
+	position: relative;
+	font-size: 25px;
+
+
+
+        a{
+		text-decoration: none;
+	    color:black;
+	    font-family: $fuente1;
+		}
+	}	
+
+
+li:hover{
+	transform: scale(1.1,1.1);
+}
+
+
+/*INDEX*/
+/*Logo redes*/
+.LogoRedes{
+	width: 25px; height: 25px;
+}
+
+/*cuadro*/
+
+.cuadro{
+	display: block;
+	border-style: solid;
+	width: 50vh;
+	border-radius: 15px;
+	border-color: black;
+	background-color:$color1;
+}
+#cuadro1{
+	margin:auto;
+	
+}
+
+/*Titulo*/
+.titulo{
+	color: black;
+	font-size: 40px;
+	font-family:$fuente2;
+	text-align: center;
+}
+
+/*texto*/
+.texto{
+	text-align: center;
+	font-family: $fuente1;
+	font-size: 20px;
+	margin-left: 30%;
+	margin-right:30%;
+}
+
+
+
+/*NUEVO*/
+.carrusel{
+	margin-right: auto;
+	margin-left: 15%;
+}
+
+
+
+
+
+/*PRODUCTOS*/
+/*fotos*/
+
+img{
+	max-width: 100%;
+}
+.gallery{
+	background-color: $color2;
+	padding: 80px 0;
+}
+.gallery img{
+	
+	background-color: #ffffff;
+	padding: 15px;
+	width: 100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+.gallery img:hover{
+	transform: scale(1.1, 1.1);
+}
+
+
+
+
+/*SOBRE MI*/
+/*titulo*/
+
+	
+	
+
+section h2 {
+	color: rgb(128,80,32);
+	font-family:$fuente2;
+	text-align: center;
+}
+/*fotos*/
+.FotoChica{
+	width: 20%; height: 20%;
+	border-style: none;
+	border-radius: 15px;
+	margin:2px;
+}
+#imagen{
+	width: 63%; height: 63%;
+	margin-top: 20%;
+	border-style: none;
+	border-radius: 15px;
+
+}
+
+.cuadro--nuevo{
+@extend .cuadro;
+border-width:3px;
+margin-top: 10%;
+}
+
+
+/*Grid*/
+
+.Grid{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 20px;
+	justify-content: center;
+	margin-left: 15%
+}
+@media screen and (max-width: 768px){
+	.Grid{
+		display: grid;
+		grid-template-rows: 50% 50%;
+		grid-template-areas: 
+		"top"
+		"bot"
+	}
+
+	.cuadro{
+		grid-area: top;
+		height: 100%;
+		margin-left: auto;
+		margin-right:auto;
+
+	}
+	article{
+		visibility: hidden;
+		grid-area: bot;
+	}
+}
+/*CONTACTO*/
+#contacto{
+	margin-top: 10%;
+	margin-left:10%;
+}
+
+
+/*FOOTER*/
+footer{
+
+	text-align: right;
+	margin-top:5%;
+	
+
+
+}
+
+
+body{
+	background-color:$color1;
+}
+
+.fondo{
+	background-color:$color2;
+	padding: 80px
+	
+}
